@@ -1,0 +1,18 @@
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+  
+  <h1>Sports/eSports Statistics Tool</h1>
+  <nav class="nav">
+    <a class="nav-link active" (click)="toggleEditor('welcome')">Welcome</a>
+    <a class="nav-link" (click)="toggleEditor('list')">Events</a>
+    <a class="nav-link" (click)="toggleEditor('add')">Add</a>
+  </nav>
+  <div>
+    <app-welcome *ngIf="showWelcome"></app-welcome></div>
+  <div>
+    <app-add-event *ngIf="showAdd"></app-add-event></div>
+  <div *ngIf="showList">
+  <app-event-list *ngFor="let e of EVENTS" [event] = 'e'></app-event-list>
+</div>
+  
