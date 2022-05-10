@@ -1,8 +1,8 @@
 
 <div>
-    <label>My HTML code</label>
     <div>
-        <button type="button" class="btn btn-primary" (click)="addHTML()">ADD</button>
+        <button type="button" class="btn btn-primary" (click)="addHTML()">Get Summary</button>
     </div>
     <hr>
+    
     <div *ngIf="htmlYouWantToAdd" [innerHTML]="htmlYouWantToAdd"></div>
