@@ -7,6 +7,7 @@ import { EventListComponent } from './event-list/event-list.component';
 import { EventComponent } from './event/event.component';
 import { AddEventComponent } from './add-event/add-event.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { SummaryComponent } from './summary/summary.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
     EventComponent,
     AddEventComponent,
     WelcomeComponent,
+    SummaryComponent,
   ],
   imports: [
     BrowserModule,

@@ -16,15 +16,9 @@ export class AddEventComponent implements OnInit{
   game_time: string = '';
   team: string = '';
 
-  addNewEvent(){
-    const newEvent: Event = {
-      game: this.game,
-      type: this.type,
-      player: this.player,
-      game_time: this.game_time,
-      team: this.team
-    }
-    this.eventList.push(newEvent);
+  addNewEvent(game: string, type: string, player:string, game_time:string, team:string) {
+    this.eService.addEvents(this.game, this.type, this.player, this.game_time, this.team);
+    window.alert('Event sucessfully added');
   }
 
 

@@ -3,7 +3,7 @@ import { Event } from './event';
 import { EventService } from './event.service';
 
 
-export type EditorType = 'list' | 'add' | 'welcome';
+export type EditorType = 'list' | 'add' | 'welcome' | 'summary';
 
 @Component({
   selector: 'app-root',
@@ -34,6 +34,10 @@ export class AppComponent {
 
   get showWelcome() {
     return this.editor === 'welcome';
+  }
+
+  get showSummary() {
+    return this.editor === 'summary';
   }
 
   toggleEditor(type: EditorType) {

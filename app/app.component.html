@@ -7,6 +7,7 @@
     <a class="nav-link active" (click)="toggleEditor('welcome')">Welcome</a>
     <a class="nav-link" (click)="toggleEditor('list')">Events</a>
     <a class="nav-link" (click)="toggleEditor('add')">Add</a>
+    <a class="nav-link" (click)="toggleEditor('summary')">Summary</a>
   </nav>
   <div>
     <app-welcome *ngIf="showWelcome"></app-welcome></div>
@@ -15,4 +16,7 @@
   <div *ngIf="showList">
   <app-event-list *ngFor="let e of EVENTS" [event] = 'e'></app-event-list>
 </div>
+<div>
+  <app-summary *ngIf="showSummary"></app-summary></div>
+<div>
   
