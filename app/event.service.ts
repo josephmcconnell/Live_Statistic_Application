@@ -99,7 +99,7 @@ getEvents() {
 }
 
 
-//Get stats of Players in Team 1 
+//Get stats of Players in from a Rocket League game 
 //(Team 1 is the first team in the list of events and player 1 is the first player listed for that team, ect.)
 getStatsRL(){
   let tem: Event[] = this.getEvents();
@@ -327,9 +327,32 @@ for(let i = 0; i < tem.length; i++) {
   //Collect Team 2 Player Stats
   let team2Stats = [team2player1Stats, team2player2Stats, team2player3Stats];
 
+  //Collect Game Stats
   let gamesStats = [team1Stats, team2Stats, team1, team2]
 
+  //Return Game Stats
   return gamesStats;
+}
+
+
+//Get stats of Players in from a Valorant game 
+//(Team 1 is the first team in the list of events and player 1 is the first player listed for that team, ect.)
+getStatsVal(){
+
+}
+
+
+//Get stats of Players in from a Hockey game 
+//(Team 1 is the first team in the list of events and player 1 is the first player listed for that team, ect.)
+getStatsHoc(){
+
+}
+
+
+//Get stats of Players in from a Basketball game 
+//(Team 1 is the first team in the list of events and player 1 is the first player listed for that team, ect.)
+getStatsBas(){
+
 }
 
 addEvents(game: string, type: string, player: string, game_time: string, team: string) {
