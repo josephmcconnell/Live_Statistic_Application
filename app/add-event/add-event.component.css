@@ -1,0 +1,15 @@
+.btn{
+    border-radius: 5px;
+    background-color: red;
+    border: black;
+    
+}
+
+.btn:hover{
+    color: #e50303;
+    background-color: #dccfcf;
+}
+
+.card{
+    background-color:#dccfcf;
+}

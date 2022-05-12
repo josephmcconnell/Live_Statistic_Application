@@ -1,0 +1,30 @@
+h1{
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: #3349534f;
+    padding: 5px;
+}
+
+div{
+    margin: 0 0 0 15px;
+    background-color: #3349534f;
+    border-radius: 5px;
+}
+
+
+nav a {
+    padding: 10px 20px;
+    margin: 5px 0 10px 15px;
+    display:inline-block;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    text-align: center;
+    border: 2px, black;
+  }
+  nav a:visited, a:link {
+    color: #334953;
+  }
+  nav a:hover {
+    color: #e50303;
+    background-color: #dccfcf;
+  }
